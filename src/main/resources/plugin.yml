@@ -1,0 +1,9 @@
+name: lelssentials
+version: '${version}'
+main: me.lel.lelssentials.Lelssentials
+api-version: '1.21'
+authors: [lel]
+description: Essential features for me.
+depend: [
+  CommandAPI
+]
