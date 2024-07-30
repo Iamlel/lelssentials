@@ -9,7 +9,7 @@ import org.bukkit.attribute.Attribute;
 import org.bukkit.attribute.AttributeInstance;
 import org.bukkit.entity.Player;
 
-public class Heal {
+public final class Heal {
     public static CommandAPICommand build() {
         return new CommandAPICommand("heal")
                 .withUsage("/heal [<target>]")

@@ -10,7 +10,7 @@ import org.bukkit.Bukkit;
 import org.bukkit.entity.Player;
 
 @SuppressWarnings("SpellCheckingInspection")
-public class ClearChat {
+public final class ClearChat {
     public static CommandAPICommand build() {
         return new CommandAPICommand("clearchat")
                 .withUsage("/clearchat")

@@ -8,7 +8,7 @@ import me.lel.lelssentials.Permission;
 import me.lel.lelssentials.Utils;
 import org.bukkit.entity.Player;
 
-public class FlySpeed {
+public final class FlySpeed {
     public static CommandAPICommand build() {
         return new CommandAPICommand("flyspeed")
                 .withUsage("/flyspeed [<target>|<speed>]")
@@ -20,7 +20,6 @@ public class FlySpeed {
                     Player target = (Player) args.getOrDefault("target", player);
                     int speed = (int) args.getOrDefault("speed", 1);
                     speed = (speed > 10) ? 10 : Math.max(speed, -10);
-
 
                     target.setFlySpeed((float) speed / 10);
                     if (target != player) {

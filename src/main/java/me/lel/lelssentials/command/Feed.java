@@ -7,7 +7,7 @@ import me.lel.lelssentials.Permission;
 import me.lel.lelssentials.Utils;
 import org.bukkit.entity.Player;
 
-public class Feed {
+public final class Feed {
     public static CommandAPICommand build() {
         return new CommandAPICommand("feed")
                 .withUsage("/feed [<target>]")

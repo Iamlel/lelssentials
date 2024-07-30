@@ -7,6 +7,7 @@ import org.bukkit.plugin.java.JavaPlugin;
 public final class Lelssentials extends JavaPlugin {
     @Override
     public void onEnable() {
+        Broadcast.build().register(this);
         ClearChat.build().register(this);
         Feed.build().register(this);
         FlySpeed.build().register(this);

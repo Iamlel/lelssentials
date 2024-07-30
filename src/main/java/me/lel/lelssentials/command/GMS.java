@@ -8,7 +8,7 @@ import me.lel.lelssentials.Utils;
 import org.bukkit.GameMode;
 import org.bukkit.entity.Player;
 
-public class GMS {
+public final class GMS {
     public static CommandAPICommand build() {
         return new CommandAPICommand("gms")
                 .withUsage("/gms [<target>]")

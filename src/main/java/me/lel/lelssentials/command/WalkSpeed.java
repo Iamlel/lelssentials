@@ -8,7 +8,7 @@ import me.lel.lelssentials.Permission;
 import me.lel.lelssentials.Utils;
 import org.bukkit.entity.Player;
 
-public class WalkSpeed {
+public final class WalkSpeed {
     public static CommandAPICommand build() {
         return new CommandAPICommand("walkspeed")
                 .withUsage("/walkspeed [<target>|<speed>]")
@@ -18,7 +18,7 @@ public class WalkSpeed {
                 .withOptionalArguments(new IntegerArgument("speed", -10, 10), new PlayerArgument("target"))
                 .executesPlayer((Player player, CommandArguments args) -> {
                     Player target = (Player) args.getOrDefault("target", player);
-                    int speed = (int) args.getOrDefault("speed", 1);
+                    int speed = (int) args.getOrDefault("speed", 2);
 
                     target.setWalkSpeed((float) speed / 10);
                     if (target != player) {
