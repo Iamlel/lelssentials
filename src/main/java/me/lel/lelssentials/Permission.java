@@ -10,4 +10,6 @@ public final class Permission {
     public static final String CLEARCHAT = BASE + ".clearchat";
     public static final String FLYSPEED = BASE + ".flyspeed";
     public static final String WALKSPEED = BASE + ".walkspeed";
+    public static final String BROADCAST = BASE + ".broadcast";
+    public static final String GIVEITEM = BASE + ".giveitem";
 }

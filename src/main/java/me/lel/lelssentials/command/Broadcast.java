@@ -10,14 +10,14 @@ public final class Broadcast {
     public static CommandAPICommand build() {
         return new CommandAPICommand("broadcast")
                 .withUsage("/broadcast <message>")
-                .withShortDescription("Feed yourself.")
-                .withFullDescription( "Feed yourself or a target.")
-                .withPermission(Permission.FEED)
+                .withShortDescription("Broadcast a message.")
+                .withFullDescription( "Broadcast a message with MiniMessage formats.")
+                .withPermission(Permission.BROADCAST)
                 .withArguments(new GreedyStringArgument("message"))
-                .executes(((sender, args) -> {
+                .executes((sender, args) -> {
                     String message = (String) args.get("message");
                     assert message != null;
                     Bukkit.getServer().broadcast(MiniMessage.miniMessage().deserialize(message));
-                }));
+                });
     }
 }
